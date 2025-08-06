@@ -11,7 +11,7 @@ using UnityEngine;
 
 namespace SPTScopeTweaks
 {
-    [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+    [BepInPlugin("com.pein.scopetweak", "Eye Relief Tweak", "1.0.0")]
     public class Plugin : BaseUnityPlugin
     {
         internal static new ManualLogSource Logger;
@@ -29,7 +29,7 @@ namespace SPTScopeTweaks
                 "Eye Relief Multiplier",
                 1.4f,
                 new ConfigDescription(
-                    "Multiplies the eye relief size for all optics. Default is 1.0.",
+                    "Multiplies the eye relief size for all optics.",
                     new AcceptableValueRange<float>(0.1f, 5f)
                 )
             );

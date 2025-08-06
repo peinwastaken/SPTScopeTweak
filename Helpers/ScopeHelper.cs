@@ -15,7 +15,7 @@ namespace SPTScopeTweaks.Helpers
             Material opticMaterial = opticRenderer.material;
 
             Vector4 _scales = opticMaterial.GetVector(ScopeMaterialData.ScalesKeyword);
-            float newScale = scopeMaterialData._Scales.y * Plugin.EyeReliefMultiplier.Value;
+            float newScale = scopeMaterialData._Scales.y * multiplier;
             _scales.y = newScale;
 
             opticMaterial.SetVector(ScopeMaterialData.ScalesKeyword, _scales);
